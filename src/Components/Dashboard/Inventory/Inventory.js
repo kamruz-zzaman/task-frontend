@@ -5,13 +5,16 @@ import successdot from "../../../asstes/Icon/Ellipse 20.svg"
 import progressdot from "../../../asstes/Icon/Ellipse 2.svg"
 import outofspacedot from "../../../asstes/Icon/Ellipse 10.svg"
 import searchIcon from "../../../asstes/Icon/Vector.svg"
+import DropDownMenu from '../../Navbar/DropDownMenu';
+import leftIcon from "../../../asstes/Icon/left-btn.svg"
+import RightIcon from "../../../asstes/Icon/right-btn.svg"
 const Inventory = () => {
     return (
         <>
-            <div className='mb-5 border-b'>
+            <div className='mb-5 font-Inter border-b'>
                 <h1 className='m-2 md:m-5  text-2xl font-bold text-gray-600'>Inventory</h1>
             </div>
-            <div className="m-2 md:m-5">
+            <div className="m-2 md:m-5 font-Inter">
                 <div className="relative bg-white  shadow-md rounded-lg">
                     <div className="p-4">
                         <label for="table-search" className="sr-only">Search</label>
@@ -366,6 +369,20 @@ const Inventory = () => {
                             </tr>
                         </tbody>
                     </table>
+                    <div className='mx-3 md:mx-2 py-10 flex justify-between'>
+                        <div className='hidden md:block'>
+                            <DropDownMenu
+                                title="show-more"
+                            />
+                        </div>
+                        <div className='flex'>
+                            <DropDownMenu
+                                title="page"
+                            />
+                            <img className='mx-3' src={leftIcon} alt="" />
+                            <img src={RightIcon} alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

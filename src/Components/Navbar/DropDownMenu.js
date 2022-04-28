@@ -17,10 +17,21 @@ export default function DropDownMenu({ title }) {
                             Starbucks
                             <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                         </Menu.Button> :
-                        <Menu.Button className="inline-flex justify-center w-full rounded-md border border-none px-4 py-2 bg-white text-sm font-medium text-gray-700  ">
-                            John Doe
-                            <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
-                        </Menu.Button>
+                        title === "show-more" ?
+                            <Menu.Button className="text-gray-500 inline-flex justify-center w-full rounded-md border px-4 py-2 bg-white text-sm font-medium ">
+                                10 Items per page
+                                <ChevronDownIcon className="-mr-1 ml-10 h-5 w-5" aria-hidden="true" />
+                            </Menu.Button> :
+                            title === "page" ?
+                                <Menu.Button className="text-gray-500 inline-flex justify-center w-full rounded-md border px-4 py-2 bg-white text-sm font-medium ">
+                                    Page 1 of 5
+                                    <ChevronDownIcon className="-mr-1 ml-10 h-5 w-5" aria-hidden="true" />
+                                </Menu.Button>
+                                :
+                                <Menu.Button className="inline-flex justify-center w-full rounded-md border border-none px-4 py-2 bg-white text-sm font-medium text-gray-700  ">
+                                    John Doe
+                                    <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                                </Menu.Button>
                 }
 
             </div>
@@ -51,79 +62,62 @@ export default function DropDownMenu({ title }) {
                                         </a>
                                     )}
                                 </Menu.Item>
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#"
-                                            className={classNames(
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                'block px-4 py-2 text-sm'
-                                            )}
-                                        >
-                                            Link2
-                                        </a>
-                                    )}
-                                </Menu.Item>
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#"
-                                            className={classNames(
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                'block px-4 py-2 text-sm'
-                                            )}
-                                        >
-                                            Link3
-                                        </a>
-                                    )}
-                                </Menu.Item>
                             </div>
                         </Menu.Items> :
-                        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            <div className="py-1">
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#"
-                                            className={classNames(
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                'block px-4 py-2 text-sm'
-                                            )}
-                                        >
-                                            Profile
-                                        </a>
-                                    )}
-                                </Menu.Item>
-                                <Menu.Item>
-                                    {({ active }) => (
-                                        <a
-                                            href="#"
-                                            className={classNames(
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                'block px-4 py-2 text-sm'
-                                            )}
-                                        >
-                                            Settings
-                                        </a>
-                                    )}
-                                </Menu.Item>
-                                <form method="POST" action="#">
+                        title === "show-more" ?
+                            <Menu.Items className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                <div className="py-1">
                                     <Menu.Item>
                                         {({ active }) => (
-                                            <button
-                                                type="submit"
+                                            <a
+                                                href="#"
                                                 className={classNames(
                                                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                    'block w-full text-left px-4 py-2 text-sm'
+                                                    'block px-4 py-2 text-sm'
                                                 )}
                                             >
-                                                Sign out
-                                            </button>
+                                                item
+                                            </a>
                                         )}
                                     </Menu.Item>
-                                </form>
-                            </div>
-                        </Menu.Items>
+                                </div>
+                            </Menu.Items> :
+                            title === "page" ?
+                                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="#"
+                                                    className={classNames(
+                                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                                        'block px-4 py-2 text-sm'
+                                                    )}
+                                                >
+                                                    page
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                    </div>
+                                </Menu.Items>
+                                :
+                                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="#"
+                                                    className={classNames(
+                                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                                        'block px-4 py-2 text-sm'
+                                                    )}
+                                                >
+                                                    Profile
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                    </div>
+                                </Menu.Items>
                 }
             </Transition>
         </Menu>

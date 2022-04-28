@@ -7,7 +7,7 @@ import personImg from "../../asstes/Icon/person.svg"
 const Navbar = () => {
     return (
         <>
-            <section className='flex justify-between bg-white py-5 md:py-0'>
+            <section className='font-Inter flex justify-between bg-white py-5 md:py-0'>
                 <div className='flex items-center'>
                     <div className='ml-5'>
                         <DropDownMenu
