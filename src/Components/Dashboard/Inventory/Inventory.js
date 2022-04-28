@@ -76,7 +76,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    200/300
+                                    <span className='font-bold'>200</span>/300
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -107,7 +107,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    122/230
+                                    <span className='font-bold'>122</span>/230
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -138,7 +138,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    100/300
+                                    <span className='font-bold'>100</span>/300
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $1.5
@@ -168,7 +168,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    0/200
+                                    <span className='font-bold'>0</span>/200
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -198,7 +198,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    0/200
+                                    <span className='font-bold'>0</span>/200
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -228,7 +228,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    0/200
+                                    <span className='font-bold'>0</span>/200
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -259,7 +259,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    200/300
+                                    <span className='font-bold'>200</span>/300
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -290,7 +290,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    200/300
+                                    <span className='font-bold'>200</span>/300
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -321,7 +321,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    200/300
+                                    <span className='font-bold'>200</span>/300
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
@@ -352,7 +352,7 @@ const Inventory = () => {
                                     </div>
                                 </td>
                                 <td className="text-right px-6 py-4">
-                                    200/300
+                                    <span className='font-bold'>200</span>/300
                                 </td>
                                 <td className="text-right hidden xl:block px-6 py-4">
                                     $10
