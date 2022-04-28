@@ -8,6 +8,9 @@ import searchIcon from "../../../asstes/Icon/Vector.svg"
 const Inventory = () => {
     return (
         <>
+            <div className='mb-5 border-b'>
+                <h1 className='m-2 md:m-5  text-2xl font-bold text-gray-600'>Inventory</h1>
+            </div>
             <div className="m-2 md:m-5">
                 <div className="relative bg-white  shadow-md rounded-lg">
                     <div className="p-4">
