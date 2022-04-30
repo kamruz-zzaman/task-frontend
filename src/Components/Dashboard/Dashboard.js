@@ -90,6 +90,7 @@ const Dashboard = () => {
                 <NavLink to='home'
                     className="mx-4"
                     style={({ isActive }) => {
+                        isActive ? setIconColor(homeColorIcon) : setIconColor(homeIcon)
                         return {
                             display: "block",
                             color: isActive ? "#00C614" : "",
@@ -99,12 +100,13 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='mt-5 '>
-                        <img className='px-3 py-3' src={homeIcon} alt="" />
+                        <img className='px-3 py-3' src={iconColor} alt="" />
                     </div>
                 </NavLink>
                 <NavLink to='inventory'
                     className="mx-4"
                     style={({ isActive }) => {
+                        isActive ? setIinventColor(inventColor) : setIinventColor(inventoryIcon)
                         return {
                             display: "block",
                             color: isActive ? "#00C614" : "",
@@ -114,12 +116,13 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='mt-5 '>
-                        <img className='px-3 py-3 ml-1' src={inventoryIcon} alt="" />
+                        <img className='px-3 py-3 ml-1' src={inventColorr} alt="" />
                     </div>
                 </NavLink>
                 <NavLink to='document'
                     className="mx-4"
                     style={({ isActive }) => {
+                        isActive ? setDocIcon(documentColorIcon) : setDocIcon(documentIcon)
                         return {
                             display: "block",
                             color: isActive ? "#00C614" : "",
@@ -129,12 +132,13 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='mt-5 '>
-                        <img className='px-3 py-3 ml-1' src={documentIcon} alt="" />
+                        <img className='px-3 py-3 ml-1' src={docColorr} alt="" />
                     </div>
                 </NavLink>
                 <NavLink to='settings'
                     className="mx-4"
                     style={({ isActive }) => {
+                        isActive ? setSettingColorIcon(settingColor) : setSettingColorIcon(settingIcon)
                         return {
                             display: "block",
                             color: isActive ? "#00C614" : "",
@@ -144,7 +148,7 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='mt-5 '>
-                        <img className='px-3 py-3 ml-1' src={settingIcon} alt="" />
+                        <img className='px-3 py-3 ml-1' src={settingColorIcon} alt="" />
                     </div>
                 </NavLink>
             </div>
@@ -160,6 +164,7 @@ const Dashboard = () => {
                         <NavLink to='home'
                             className="mx-4"
                             style={({ isActive }) => {
+                                isActive ? setIconColor(homeColorIcon) : setIconColor(homeIcon)
                                 return {
                                     display: "block",
                                     color: isActive ? "#00C614" : "",
@@ -169,12 +174,13 @@ const Dashboard = () => {
                             }}
                         >
                             <div>
-                                <img className='px-3 py-3' src={homeIcon} alt="" />
+                                <img className='px-3 py-3' src={iconColor} alt="" />
                             </div>
                         </NavLink>
                         <NavLink to='inventory'
                             className="mx-4"
                             style={({ isActive }) => {
+                                isActive ? setIinventColor(inventColor) : setIinventColor(inventoryIcon)
                                 return {
                                     display: "block",
                                     color: isActive ? "#00C614" : "",
@@ -184,12 +190,13 @@ const Dashboard = () => {
                             }}
                         >
                             <div>
-                                <img className='px-3 py-3 ml-1' src={inventoryIcon} alt="" />
+                                <img className='px-3 py-3 ml-1' src={inventColorr} alt="" />
                             </div>
                         </NavLink>
                         <NavLink to='document'
                             className="mx-4"
                             style={({ isActive }) => {
+                                isActive ? setDocIcon(documentColorIcon) : setDocIcon(documentIcon)
                                 return {
                                     display: "block",
                                     color: isActive ? "#00C614" : "",
@@ -199,12 +206,13 @@ const Dashboard = () => {
                             }}
                         >
                             <div>
-                                <img className='px-3 py-3 ml-1' src={documentIcon} alt="" />
+                                <img className='px-3 py-3 ml-1' src={docColorr} alt="" />
                             </div>
                         </NavLink>
                         <NavLink to='settings'
                             className="mx-4"
                             style={({ isActive }) => {
+                                isActive ? setSettingColorIcon(settingColor) : setSettingColorIcon(settingIcon)
                                 return {
                                     display: "block",
                                     color: isActive ? "#00C614" : "",
@@ -214,7 +222,7 @@ const Dashboard = () => {
                             }}
                         >
                             <div>
-                                <img className='px-3 py-3 ml-1' src={settingIcon} alt="" />
+                                <img className='px-3 py-3 ml-1' src={settingColorIcon} alt="" />
                             </div>
                         </NavLink>
                     </div>
