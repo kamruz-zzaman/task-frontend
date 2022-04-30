@@ -379,8 +379,8 @@ const Inventory = () => {
                             <DropDownMenu
                                 title="page"
                             />
-                            <img className='mx-3' src={leftIcon} alt="" />
-                            <img src={RightIcon} alt="" />
+                            <img className='mx-3 cursor-pointer' src={leftIcon} alt="" />
+                            <img className='cursor-pointer' src={RightIcon} alt="" />
                         </div>
                     </div>
                 </div>
