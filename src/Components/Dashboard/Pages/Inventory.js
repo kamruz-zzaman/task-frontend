@@ -33,7 +33,7 @@ const Inventory = () => {
                                         <input id="checkbox-all-search" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </th>
-                                <th scope="col" className="hidden md:block px-6 py-3">
+                                <th scope="col" className="hidden md:block p-3">
                                     Date Updated <img src={bottomarrow} className="inline" alt="" />
                                 </th>
                                 <th scope="col" className="px-3 md:px-6 py-3">
@@ -67,7 +67,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4 whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     11 Nov 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -98,7 +98,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4    whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     10 Nov 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -129,7 +129,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4     whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     6 Nov 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -159,7 +159,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4     whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     28 Oct 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -189,7 +189,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4  whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     22 Oct 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -219,7 +219,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4 whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     16 Oct 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -250,7 +250,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4   whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     9 Oct 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -281,7 +281,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4   whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     5 Oct 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -312,7 +312,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4   whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     1 Oct 2021
                                 </td>
                                 <td className="px-3 md:px-6 py-4">
@@ -343,7 +343,7 @@ const Inventory = () => {
                                         <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4" />
                                     </div>
                                 </td>
-                                <td className="hidden md:block px-6 py-4   whitespace-nowrap">
+                                <td className="hidden md:block p-3 whitespace-nowrap">
                                     23 Sep 2021
                                 </td>
                                 <td className="px-3 md:px-6  py-4">
