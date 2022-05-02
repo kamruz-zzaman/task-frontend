@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import homeIcon from '../../asstes/Icon/home.svg'
 import inventoryIcon from '../../asstes/Icon/inventory.svg'
 import documentIcon from '../../asstes/Icon/documents.svg'
 import settingIcon from '../../asstes/Icon/settings.svg'
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import homeColorIcon from '../../asstes/Icon/home -color.svg'
 import inventColor from '../../asstes/Icon/inventory -color.svg'
 import documentColorIcon from '../../asstes/Icon/document-color.svg'
@@ -14,8 +14,19 @@ const Dashboard = () => {
     const [inventColorr, setIinventColor] = useState(inventoryIcon);
     const [docColorr, setDocIcon] = useState(documentIcon);
     const [settingColorIcon, setSettingColorIcon] = useState(settingIcon);
+    const location = useLocation();
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (location.pathname === '/') {
+            navigate('/inventory')
+        }
+    }, [])
+
     return (
         <div className='flex '>
+
+            {/* for desktop version */}
+
             <div className='hidden lg:block font-Inter text-sm border-r'>
                 <NavLink to='home'
                     className="mx-4"
@@ -47,10 +58,12 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='flex mt-2 pl-4 pr-10 py-3'>
-                        <img className='mr-3' src={inventColorr} alt="" />
+                        <img className='mr-3 ml-1' src={inventColorr} alt="" />
                         <p>Inventory</p>
                     </div>
                 </NavLink>
+
+
                 <NavLink to='document'
                     className="mx-4"
                     style={({ isActive }) => {
@@ -64,7 +77,7 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='flex mt-2 pl-4 pr-10 py-3'>
-                        <img className='mr-2' src={docColorr} alt="" />
+                        <img className='mr-2 ml-1' src={docColorr} alt="" />
                         <p>Documents</p>
                     </div>
                 </NavLink>
@@ -81,11 +94,14 @@ const Dashboard = () => {
                     }}
                 >
                     <div className='flex mt-2 pl-4 pr-10 py-3'>
-                        <img className='mr-2' src={settingColorIcon} alt="" />
+                        <img className='mr-2 ml-1' src={settingColorIcon} alt="" />
                         <p>Settings</p>
                     </div>
                 </NavLink>
             </div>
+
+            {/* for tablet version */}
+
             <div className='hidden md:block lg:hidden font-Inter text-sm border-r'>
                 <NavLink to='home'
                     className="mx-4"
@@ -154,6 +170,9 @@ const Dashboard = () => {
             </div>
             <div>
                 <Outlet />
+
+                {/* for mobile version */}
+
                 <div className='block md:hidden'>
                     <div className='flex w-full justify-center items-center' style={{
                         background: "#FFFFFF",

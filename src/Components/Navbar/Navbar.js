@@ -14,11 +14,11 @@ const Navbar = () => {
                             title="starbucks"
                         />
                     </div>
-                    <div class="hidden md:block ">
-                        <div class=" mb-3 xl:w-96 flex justify-center mt-5 ml-28">
-                            <div class="input-group relative flex flex-wrap items-stretch w-full">
+                    <div className="hidden md:block ">
+                        <div className=" mb-3 xl:w-96 flex justify-center mt-5 ml-28">
+                            <div className="input-group relative flex flex-wrap items-stretch w-full">
                                 <img src={searchIcon} className="absolute  z-10 mt-3 ml-3" alt="" />
-                                <input type="search" class="form-control relative flex-auto min-w-0 block w-full pl-9 pr-3 py-1.5 focus:outline-none  text-base font-normal text-gray-700  bg-clip-padding border border-solid bg-gray-100 rounded transition ease-in-out m-0 " placeholder="Search" aria-label="Search" aria-describedby="button-addon2" />
+                                <input type="search" className="form-control relative flex-auto min-w-0 block w-full pl-9 pr-3 py-1.5 focus:outline-none  text-base font-normal text-gray-700  bg-clip-padding border border-solid bg-gray-100 rounded transition ease-in-out m-0 " placeholder="Search" aria-label="Search" aria-describedby="button-addon2" />
                             </div>
                         </div>
                     </div>

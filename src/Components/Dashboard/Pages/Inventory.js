@@ -17,7 +17,7 @@ const Inventory = () => {
             <div className="m-2 md:m-5 font-Inter">
                 <div className="relative bg-white  shadow-md rounded-lg">
                     <div className="p-4">
-                        <label for="table-search" className="sr-only">Search</label>
+                        <label htmlFor="table-search" className="sr-only">Search</label>
                         <div className="relative mt-1">
                             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <img src={searchIcon} alt="searchIcon" />
